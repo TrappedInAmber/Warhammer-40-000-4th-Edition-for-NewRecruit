@@ -3061,6 +3061,106 @@ A target with an Armour Value that is hit by a vibro cannon always suffers a sin
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shroud Runners" hidden="false" id="40ee-2616-749a-6080">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="a06f-8b45-2510-c8c5" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Skilled Rider" id="39a8-fe02-07e1-d43f" hidden="false" type="rule" targetId="b24c-f56b-5867-01e7"/>
+        <infoLink name="Stealth" id="c29b-478c-0125-233f" hidden="false" type="rule" targetId="744d-4143-694e-f87f"/>
+        <infoLink name="Infiltrate" id="8f9a-5674-def6-4dd2" hidden="false" type="rule" targetId="c27d-09d4-6a09-1bcd"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Shroud Runner" hidden="false" id="5532-2bf9-2cc4-e7a2">
+          <costs>
+            <cost name="Points" typeId="4deb-313d-6685-f48b" value="60"/>
+          </costs>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ranger Long Rifle" hidden="false" id="f17b-2a67-a581-f896" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2d41-5fc6-4c98-f759-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d41-5fc6-4c98-f759-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Ranger Long Rifle" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="18c4-7d2b-d62b-587c">
+                  <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">X</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">6</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 1, Sniper, Pinning</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            <selectionEntry type="upgrade" import="true" name="Scatter Laser" hidden="false" id="d59e-b4e3-1ed0-16de">
+                <profiles>
+                    <profile name="Scatter Laser" typeId="576561706f6e23232344415441232323" typeName="Weapon" hidden="false" id="b559-cd05-9f44-dd7f">
+                    <characteristics>
+                    <characteristic name="Range" typeId="52616e676523232344415441232323">36&quot;</characteristic>
+                    <characteristic name="Strength" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="AP" typeId="4.1502323234441545e+23">6</characteristic>
+                    <characteristic name="Type" typeId="8b10-045a-f593-605e">Heavy 4</characteristic>
+                    <characteristic name="Info" typeId="33e9-27bd-77e4-401d"/>
+                </characteristics>
+            </profile>
+        </profiles>
+        </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Shuriken Pistol" hidden="false" id="016a-5472-a516-a528" type="selectionEntry" targetId="b8cd-86a8-13b2-b37f" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e06-4d54-b42f-04c7-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e06-4d54-b42f-04c7-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Shroud Runner" typeId="556e697423232344415441232323" typeName="Unit" hidden="false" id="cced-45f6-76a0-d540">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="556e6974205479706523232344415441232323">Jetbike</characteristic>
+                <characteristic name="WS" typeId="5.753232323444154e+23">3</characteristic>
+                <characteristic name="BS" typeId="4.2532323234441546e+23">4</characteristic>
+                <characteristic name="S" typeId="5.323232344415441e+21">3</characteristic>
+                <characteristic name="T" typeId="5.423232344415441e+21">4</characteristic>
+                <characteristic name="W" typeId="5.723232344415441e+21">2</characteristic>
+                <characteristic name="I" typeId="4.923232344415441e+21">4</characteristic>
+                <characteristic name="A" typeId="4.123232344415441e+21">1</characteristic>
+                <characteristic name="LD" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="Sv" typeId="5.361766523232344e+27">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="12ef-6f7c-61a5-4926" includeChildSelections="false"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="bf26-d235-e77e-af06" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pathfinders" hidden="false" id="ac26-51bd-940d-29d9">
+          <rules>
+            <rule name="Pathfinders" id="3d68-327f-763d-92ce" hidden="false">
+              <description>A Shroud Runner squad that has been upgraded to Pathfinders has the Scouts special rule. Any cover save they use is improved by +2 instead of the usual +1 conferred by the Stealth rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Scouts" id="56dd-01a7-d224-daa6" hidden="false" type="rule" targetId="ec7c-9e8c-06ac-06b7"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="increment" value="5" field="4deb-313d-6685-f48b">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" includeChildSelections="true" childName="model"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a64-b17d-45cc-e4bf" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Masters of Stealth" id="cc6e-3c69-e8d3-5fb2" hidden="false">
+          <description>Shroud Runners have the Infiltrate, Skilled Rider, and Stealth special rules.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rangers" hidden="false" id="40ee-2616-749a-6080">
       <categoryLinks>
         <categoryLink name="Troops" hidden="false" id="a06f-8b45-2510-c8c5" targetId="23e2-2a28-50f4-a3c1" primary="true"/>
